@@ -8,8 +8,8 @@ ADDR = (SERVER, PORT)
 FORMAT = "utf-8"
 DISCONNECT_MESSAGE = "!DISCONNECT"
 
-server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server.bind(ADDR)
+server = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #creating a socket for IPv4
+server.bind(ADDR) #binding that socket to given server/port
 
 
 def handle_client(conn, addr):
